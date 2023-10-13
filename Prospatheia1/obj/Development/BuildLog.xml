@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectInfo>
+    <Name>Prospatheia1</Name>
+    <LastWriteTime>2023-01-07T18:01:38.0773269Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>Package.dtsx</Name>
+      <LastWriteTime>2023-01-08T17:19:10.7990177Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>

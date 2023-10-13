@@ -1,0 +1,2651 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/28/2022 3:40:11 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-LGNU4S88"
+  DTS:CreatorName="LAPTOP-LGNU4S88\alexf"
+  DTS:DTSID="{1C195D34-AE8C-41C9-8FBC-C027CDE4F29F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{71A8DB07-76E8-47C6-BBD6-E3120C3FE188}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B7B08B0F-D269-40D9-B2C1-B92B0457B56D}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\enroll.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A6222411-2E25-414D-BD77-3874DEE13C69}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\enroll.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CC3C7424-870C-4C4C-93A4-AF12D09742D4}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\enroll.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{374F6617-75DF-4BCF-B8E8-F0D9C1F858EA}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\enroll.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{AEAEA1D5-0F34-4E4E-8E28-0B0DD2064FEE}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\country_populations.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{25BBB7B9-BD3F-4E9D-A441-821D528B1A43}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\country_populations.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{11E95C23-2106-4E77-89CA-E280A81FBF2E}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1032"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1253"
+          DTS:ConnectionString="C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\country_populations.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{1D7D7265-5F05-4A7B-9427-0C6AE8400353}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="31"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country (or dependency)"
+              DTS:DTSID="{071A24CE-1783-4644-BD73-A536594B608A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population (2020)"
+              DTS:DTSID="{581BFE09-E49E-4BA0-8976-F91944225FF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Yearly Change"
+              DTS:DTSID="{E9C93B6D-51BF-4F40-9618-E891361723ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Net Change"
+              DTS:DTSID="{ACEFE2B9-F9DC-4052-9D6F-0D07926E5B5D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Density (P KmΒ²)"
+              DTS:DTSID="{D7C17054-32FF-4675-AA8D-5091DB68ECD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Land Area (KmΒ²)"
+              DTS:DTSID="{9594BBB6-2CBF-4126-AF8B-957A90B1F9BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Migrants (net)"
+              DTS:DTSID="{81CFA88C-F310-4FCB-9726-6876EDDEBA2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fert  Rate"
+              DTS:DTSID="{65A17A6D-3482-46B6-BF4A-00F187CD34EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Med  Age"
+              DTS:DTSID="{EEC80555-FECE-4B03-86C1-EBEA1DE3CBCE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Urban Pop %"
+              DTS:DTSID="{91F35948-CC3C-49F0-A287-FEE0EF4291F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="World Share"
+              DTS:DTSID="{B7320C2B-8C97-4117-A430-AA14004800B9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{91A362EF-C10E-471E-8729-4A7E4A8681AD}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1032"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\alexf\OneDrive\Υπολογιστής\Big Data Ergasia\unemployment analysis.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Name"
+              DTS:DTSID="{C3840900-3440-48EC-A9AE-95CF7C35CA85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Code"
+              DTS:DTSID="{66FA8555-1059-4C64-8C00-A67087B41346}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1991"
+              DTS:DTSID="{950C2520-524B-4C89-A3C4-FB75A6FB0074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1992"
+              DTS:DTSID="{AEBD55FA-4FE4-42A3-BD91-2016F6B9E6F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1993"
+              DTS:DTSID="{6F4044A2-9B4D-43E0-9243-9B0EFE85231F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1994"
+              DTS:DTSID="{41DA9900-DBB0-4AB2-BD46-2087453D4293}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1995"
+              DTS:DTSID="{DC86C8F8-2961-4867-AF26-CF6D3345A3E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1996"
+              DTS:DTSID="{E0E13BDE-B85E-44D5-93CE-420698557DD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1997"
+              DTS:DTSID="{61968876-C413-4A8C-B618-9254076464B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1998"
+              DTS:DTSID="{CDFEFBED-5386-456C-AC17-3677673C2FD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1999"
+              DTS:DTSID="{37429CC5-AE83-4AF4-8ED9-09F2358A531F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2000"
+              DTS:DTSID="{20DBD74E-73C5-4402-AF2E-11C4A719F33D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2001"
+              DTS:DTSID="{AB11E9A6-7826-4B59-983D-EDB7571CD413}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2002"
+              DTS:DTSID="{9A170A07-C326-4196-B03F-FFE2A6E1BEDB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2003"
+              DTS:DTSID="{986451B5-CF23-474A-968D-0724F84C2D26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2004"
+              DTS:DTSID="{6A08EB89-2B58-4DDB-A738-1581BFE4E6BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2005"
+              DTS:DTSID="{12931EFD-A425-4E38-8FB2-8AB58A18E622}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2006"
+              DTS:DTSID="{8E6F538E-ACE6-4A73-B0F4-2AF58D52F6A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2007"
+              DTS:DTSID="{504B5FB1-D8B0-4DB0-8550-5CA9CFCFF840}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2008"
+              DTS:DTSID="{2066E762-B643-49DE-9198-415A093D595E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2009"
+              DTS:DTSID="{5B5800C0-71E6-4EE8-AE09-A2D9093224F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2010"
+              DTS:DTSID="{5376A5CE-2D1E-4588-AF81-06556BA1E101}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2011"
+              DTS:DTSID="{11F19705-E35A-43E7-B8C1-AB63E9839037}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2012"
+              DTS:DTSID="{77D434FB-6520-4D0A-8C62-AF4743064EAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2013"
+              DTS:DTSID="{EB40409A-D7FA-4A89-BD0F-FBE7403EF065}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2014"
+              DTS:DTSID="{1CD135CD-1615-4A35-8924-ED9BE1439B39}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2015"
+              DTS:DTSID="{57E2C4AC-F2D0-452A-8EE9-3AD48DB91C6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2016"
+              DTS:DTSID="{F020FC77-4A70-4AAF-AFD1-FC815A3E7242}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2017"
+              DTS:DTSID="{65A38D55-36E2-42FE-9F41-88E77BB0217D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2018"
+              DTS:DTSID="{768187BF-819D-4B0E-AD7B-C6D42503B89B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2019"
+              DTS:DTSID="{905065BA-4387-4382-90E0-51BBAEAA53D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2020"
+              DTS:DTSID="{3D127E9C-E2F5-4C8B-8BD1-B974F55401E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2021"
+              DTS:DTSID="{CEDF47C3-80EE-40AA-BE01-EF8216994756}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.BigDataETL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+      DTS:ObjectName="LocalHost.BigDataETL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=BigDataETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{BE75F00F-C3EB-4715-8038-74DC9D58540C}LocalHost.BigDataETL;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.BigDataETL 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{272ED8DB-E4AF-491A-899B-BB522014FDC2}"
+      DTS:ObjectName="LocalHost.BigDataETL 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=BigDataETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{272ED8DB-E4AF-491A-899B-BB522014FDC2}LocalHost.BigDataETL 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.BigDataETL 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{674CE327-BB6D-451C-85CE-82EE217D4791}"
+      DTS:ObjectName="LocalHost.BigDataETL 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=BigDataETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{674CE327-BB6D-451C-85CE-82EE217D4791}LocalHost.BigDataETL 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.BigDataETL 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{06239FDB-3F3B-49F2-98D9-9259E7F08A9E}"
+      DTS:ObjectName="LocalHost.BigDataETL 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=BigDataETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{06239FDB-3F3B-49F2-98D9-9259E7F08A9E}LocalHost.BigDataETL 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.BigDataETL 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9DF93FF4-3F1C-4720-ABEA-DA7883FDE015}"
+      DTS:ObjectName="LocalHost.BigDataETL 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=BigDataETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{9DF93FF4-3F1C-4720-ABEA-DA7883FDE015}LocalHost.BigDataETL 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A3008B93-2D89-4E4A-8C6D-37B3C9503BCC}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Population Dataset"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Population Dataset"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Population Dataset.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 5]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[country_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Country (or dependency)]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[country_name]"
+                      name="country_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[population]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Population (2020)]"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[population]"
+                      name="population"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[median_age]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Med# Age]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[median_age]"
+                      name="median_age"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[urban_pop_percentage]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Urban Pop %]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[urban_pop_percentage]"
+                      name="urban_pop_percentage"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[world_share]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[World Share]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[world_share]"
+                      name="world_share"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Country (or dependency)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Country (or dependency)" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Population (2020)]"
+                      dataType="r8"
+                      name="Population (2020)" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Yearly Change]"
+                      dataType="wstr"
+                      length="255"
+                      name="Yearly Change" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Net Change]"
+                      dataType="r8"
+                      name="Net Change" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Density (P/Km²)]"
+                      dataType="r8"
+                      name="Density (P/Km²)" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Land Area (Km²)]"
+                      dataType="r8"
+                      name="Land Area (Km²)" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Migrants (net)]"
+                      dataType="r8"
+                      name="Migrants (net)" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Fert# Rate]"
+                      dataType="wstr"
+                      length="255"
+                      name="Fert# Rate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Med# Age]"
+                      dataType="wstr"
+                      length="255"
+                      name="Med# Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[Urban Pop %]"
+                      dataType="wstr"
+                      length="255"
+                      name="Urban Pop %" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].ExternalColumns[World Share]"
+                      dataType="wstr"
+                      length="255"
+                      name="World Share" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Country (or dependency)]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Country (or dependency)]"
+                      name="Country (or dependency)" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Population (2020)]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Population (2020)]"
+                      name="Population (2020)" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Med# Age]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Med# Age]"
+                      name="Med# Age" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Urban Pop %]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[Urban Pop %]"
+                      name="Urban Pop %" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[World Share]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Error Output].Columns[World Share]"
+                      name="World Share" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Population Table"
+              componentClassID="Microsoft.SQLServerDestination"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="Population Table"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[country_populations]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Population Table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.BigDataETL]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.BigDataETL]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].Columns[country_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="country_name"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[country_name]"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[country_name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].Columns[population]"
+                      cachedDataType="r8"
+                      cachedName="population"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[population]"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[population]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].Columns[median_age]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="median_age"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[median_age]"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[median_age]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].Columns[urban_pop_percentage]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="urban_pop_percentage"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[urban_pop_percentage]"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[urban_pop_percentage]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].Columns[world_share]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="world_share"
+                      externalMetadataColumnId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[world_share]"
+                      lineageId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output].Columns[world_share]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[country_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="country_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[population]"
+                      dataType="r8"
+                      name="population" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[median_age]"
+                      dataType="wstr"
+                      length="255"
+                      name="median_age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[urban_pop_percentage]"
+                      dataType="wstr"
+                      length="255"
+                      name="urban_pop_percentage" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input].ExternalColumns[world_share]"
+                      dataType="wstr"
+                      length="255"
+                      name="world_share" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Staging Table"
+              componentClassID="Microsoft.SQLServerDestination"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="Staging Table"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[staging1]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Staging Table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.BigDataETL]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.BigDataETL]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="country"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[country]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[country]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[countrycode]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="countrycode"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[countrycode]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[countrycode]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[region]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="region"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[region]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[region]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[incomegroup]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="incomegroup"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[incomegroup]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[incomegroup]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[iau_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="iau_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[iau_id]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[iau_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[iau_id1]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="iau_id1"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[iau_id1]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[iau_id1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[eng_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="eng_name"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[eng_name]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[eng_name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[orig_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="orig_name"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[orig_name]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[orig_name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[foundedyr]"
+                      cachedDataType="r8"
+                      cachedName="foundedyr"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[foundedyr]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[foundedyr]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[yrclosed]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="yrclosed"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[yrclosed]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[yrclosed]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[private01]"
+                      cachedDataType="r8"
+                      cachedName="private01"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[private01]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[private01]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[coordinates]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="coordinates"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[coordinates]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[coordinates]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[latitude]"
+                      cachedDataType="r8"
+                      cachedName="latitude"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[latitude]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[latitude]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[longitude]"
+                      cachedDataType="r8"
+                      cachedName="longitude"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[longitude]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[longitude]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[phd_granting]"
+                      cachedDataType="r8"
+                      cachedName="phd_granting"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[phd_granting]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[phd_granting]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[m_granting]"
+                      cachedDataType="r8"
+                      cachedName="m_granting"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[m_granting]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[m_granting]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[b_granting]"
+                      cachedDataType="r8"
+                      cachedName="b_granting"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[b_granting]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[b_granting]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[divisions]"
+                      cachedDataType="r8"
+                      cachedName="divisions"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[divisions]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[divisions]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[total_fields]"
+                      cachedDataType="r8"
+                      cachedName="total_fields"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[total_fields]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[total_fields]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[unique_fields]"
+                      cachedDataType="r8"
+                      cachedName="unique_fields"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[unique_fields]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[unique_fields]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[specialized]"
+                      cachedDataType="r8"
+                      cachedName="specialized"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[specialized]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[specialized]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[merger]"
+                      cachedDataType="r8"
+                      cachedName="merger"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[merger]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[merger]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[noiau]"
+                      cachedDataType="r8"
+                      cachedName="noiau"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[noiau]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[noiau]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[year]"
+                      cachedDataType="r8"
+                      cachedName="year"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[year]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[students5_interpolated]"
+                      cachedDataType="r8"
+                      cachedName="students5_interpolated"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[students5_interpolated]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_interpolated]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[students5_extrapolated]"
+                      cachedDataType="r8"
+                      cachedName="students5_extrapolated"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[students5_extrapolated]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_extrapolated]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].Columns[students5_estimated]"
+                      cachedDataType="r8"
+                      cachedName="students5_estimated"
+                      externalMetadataColumnId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[students5_estimated]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_estimated]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="255"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[countrycode]"
+                      dataType="wstr"
+                      length="255"
+                      name="countrycode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[region]"
+                      dataType="wstr"
+                      length="255"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[incomegroup]"
+                      dataType="wstr"
+                      length="255"
+                      name="incomegroup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[iau_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="iau_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[iau_id1]"
+                      dataType="wstr"
+                      length="255"
+                      name="iau_id1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[eng_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="eng_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[orig_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="orig_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[foundedyr]"
+                      dataType="r8"
+                      name="foundedyr" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[yrclosed]"
+                      dataType="wstr"
+                      length="255"
+                      name="yrclosed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[private01]"
+                      dataType="r8"
+                      name="private01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[coordinates]"
+                      dataType="wstr"
+                      length="255"
+                      name="coordinates" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[latitude]"
+                      dataType="r8"
+                      name="latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[longitude]"
+                      dataType="r8"
+                      name="longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[phd_granting]"
+                      dataType="r8"
+                      name="phd_granting" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[m_granting]"
+                      dataType="r8"
+                      name="m_granting" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[b_granting]"
+                      dataType="r8"
+                      name="b_granting" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[divisions]"
+                      dataType="r8"
+                      name="divisions" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[total_fields]"
+                      dataType="r8"
+                      name="total_fields" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[unique_fields]"
+                      dataType="r8"
+                      name="unique_fields" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[specialized]"
+                      dataType="r8"
+                      name="specialized" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[merger]"
+                      dataType="r8"
+                      name="merger" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[noiau]"
+                      dataType="r8"
+                      name="noiau" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[year]"
+                      dataType="r8"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[students5_interpolated]"
+                      dataType="r8"
+                      name="students5_interpolated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[students5_extrapolated]"
+                      dataType="r8"
+                      name="students5_extrapolated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input].ExternalColumns[students5_estimated]"
+                      dataType="r8"
+                      name="students5_estimated" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\University Dataset"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="University Dataset"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\University Dataset.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[country]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[countrycode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[countrycode]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[countrycode]"
+                      name="countrycode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[region]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[region]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[region]"
+                      name="region"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[incomegroup]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[incomegroup]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[incomegroup]"
+                      name="incomegroup"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[iau_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[iau_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[iau_id]"
+                      name="iau_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[iau_id1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[iau_id1]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[iau_id1]"
+                      name="iau_id1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[eng_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[eng_name]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[eng_name]"
+                      name="eng_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[orig_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[orig_name]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[orig_name]"
+                      name="orig_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[foundedyr]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[foundedyr]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[foundedyr]"
+                      name="foundedyr"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[yrclosed]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[yrclosed]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[yrclosed]"
+                      name="yrclosed"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[private01]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[private01]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[private01]"
+                      name="private01"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[coordinates]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[coordinates]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[coordinates]"
+                      name="coordinates"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[latitude]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[latitude]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[latitude]"
+                      name="latitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[longitude]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[longitude]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[longitude]"
+                      name="longitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[phd_granting]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[phd_granting]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[phd_granting]"
+                      name="phd_granting"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[m_granting]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[m_granting]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[m_granting]"
+                      name="m_granting"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[b_granting]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[b_granting]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[b_granting]"
+                      name="b_granting"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[divisions]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[divisions]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[divisions]"
+                      name="divisions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[total_fields]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[total_fields]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[total_fields]"
+                      name="total_fields"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[unique_fields]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[unique_fields]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[unique_fields]"
+                      name="unique_fields"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[specialized]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[specialized]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[specialized]"
+                      name="specialized"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[merger]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[merger]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[merger]"
+                      name="merger"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[noiau]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[noiau]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[noiau]"
+                      name="noiau"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[year]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[year]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[year]"
+                      name="year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_interpolated]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[students5_interpolated]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_interpolated]"
+                      name="students5_interpolated"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_extrapolated]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[students5_extrapolated]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_extrapolated]"
+                      name="students5_extrapolated"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_estimated]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[students5_estimated]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[students5_estimated]"
+                      name="students5_estimated"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[F1]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[F1]"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].Columns[F1]"
+                      name="F1"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="255"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[countrycode]"
+                      dataType="wstr"
+                      length="255"
+                      name="countrycode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[region]"
+                      dataType="wstr"
+                      length="255"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[incomegroup]"
+                      dataType="wstr"
+                      length="255"
+                      name="incomegroup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[iau_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="iau_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[iau_id1]"
+                      dataType="wstr"
+                      length="255"
+                      name="iau_id1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[eng_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="eng_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[orig_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="orig_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[foundedyr]"
+                      dataType="r8"
+                      name="foundedyr" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[yrclosed]"
+                      dataType="wstr"
+                      length="255"
+                      name="yrclosed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[private01]"
+                      dataType="r8"
+                      name="private01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[coordinates]"
+                      dataType="wstr"
+                      length="255"
+                      name="coordinates" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[latitude]"
+                      dataType="r8"
+                      name="latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[longitude]"
+                      dataType="r8"
+                      name="longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[phd_granting]"
+                      dataType="r8"
+                      name="phd_granting" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[m_granting]"
+                      dataType="r8"
+                      name="m_granting" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[b_granting]"
+                      dataType="r8"
+                      name="b_granting" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[divisions]"
+                      dataType="r8"
+                      name="divisions" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[total_fields]"
+                      dataType="r8"
+                      name="total_fields" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[unique_fields]"
+                      dataType="r8"
+                      name="unique_fields" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[specialized]"
+                      dataType="r8"
+                      name="specialized" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[merger]"
+                      dataType="r8"
+                      name="merger" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[noiau]"
+                      dataType="r8"
+                      name="noiau" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[year]"
+                      dataType="r8"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[students5_interpolated]"
+                      dataType="r8"
+                      name="students5_interpolated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[students5_extrapolated]"
+                      dataType="r8"
+                      name="students5_extrapolated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[students5_estimated]"
+                      dataType="r8"
+                      name="students5_estimated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output].ExternalColumns[F1]"
+                      dataType="r8"
+                      name="F1" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[F1]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[F1]"
+                      name="F1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[country]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[country]"
+                      name="country" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[countrycode]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[countrycode]"
+                      name="countrycode" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[region]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[region]"
+                      name="region" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[incomegroup]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[incomegroup]"
+                      name="incomegroup" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[iau_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[iau_id]"
+                      name="iau_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[iau_id1]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[iau_id1]"
+                      name="iau_id1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[eng_name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[eng_name]"
+                      name="eng_name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[orig_name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[orig_name]"
+                      name="orig_name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[foundedyr]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[foundedyr]"
+                      name="foundedyr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[yrclosed]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[yrclosed]"
+                      name="yrclosed" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[private01]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[private01]"
+                      name="private01" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[coordinates]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[coordinates]"
+                      name="coordinates" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[latitude]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[latitude]"
+                      name="latitude" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[longitude]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[longitude]"
+                      name="longitude" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[phd_granting]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[phd_granting]"
+                      name="phd_granting" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[m_granting]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[m_granting]"
+                      name="m_granting" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[b_granting]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[b_granting]"
+                      name="b_granting" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[divisions]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[divisions]"
+                      name="divisions" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[total_fields]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[total_fields]"
+                      name="total_fields" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[unique_fields]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[unique_fields]"
+                      name="unique_fields" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[specialized]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[specialized]"
+                      name="specialized" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[merger]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[merger]"
+                      name="merger" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[noiau]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[noiau]"
+                      name="noiau" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[year]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[year]"
+                      name="year" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[students5_interpolated]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[students5_interpolated]"
+                      name="students5_interpolated" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[students5_extrapolated]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[students5_extrapolated]"
+                      name="students5_extrapolated" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[students5_estimated]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[students5_estimated]"
+                      name="students5_estimated" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output]"
+              endId="Package\Data Flow Task\Staging Table.Inputs[SQL Server Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\University Dataset.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output1]"
+              endId="Package\Data Flow Task\Population Table.Inputs[SQL Server Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Population Dataset.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Populations Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Truncate Table"
+      DTS:DTSID="{9865f72c-85f3-4cf1-999a-7f252a283389}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Populations Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [BigDataETL].[dbo].[country_populations] " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Staging Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Truncate Table"
+      DTS:DTSID="{8D5D3739-135E-4B17-996C-7EA74365DF33}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Staging Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [BigDataETL].[dbo].[staging1] " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Country Dimension"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8E06C1FD-81BF-46C9-8979-86DCA52AD862}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Country Dimension"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="INSERT INTO country_dim(country, countrycode, region, incomegroup, population, median_age, urban_pop_percentage, world_share)&#xA;SELECT country, countrycode, region, incomegroup, population, median_age, urban_pop_percentage, world_share&#xA;FROM staging1&#xA;INNER JOIN country_populations&#xA;ON staging1.country = country_populations.country_name" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Fact Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{562D441A-2EF8-4651-9B05-BAEE258FFA2D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Fact Table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="INSERT INTO [BigDataETL].[dbo].[fact](geolocation, country, year, university, enrollments)&#xA;SELECT &#xA; [geolocation_dim].[geolocation_id] AS [geolocation], &#xA; [country_dim].[country_id] AS [country],&#xA; [year_dim].[id_year] AS [year],&#xA; [uni_dim].[uni_id] AS [university], &#xA; [BigDataETL].[dbo].[staging1].[students5_estimated]&#xA;FROM [BigDataETL].[dbo].[staging1]&#xA;INNER JOIN [BigDataETL].[dbo].[geolocation_dim] ON [staging1].[coordinates] = [geolocation_dim].[coordinates]&#xA;INNER JOIN [BigDataETL].[dbo].[country_dim] ON [staging1].[country] = [BigDataETL].[dbo].[country_dim].[country]&#xA;INNER JOIN [BigDataETL].[dbo].[year_dim] ON [staging1].[year] = [year_dim].[year]&#xA;INNER JOIN [BigDataETL].[dbo].[uni_dim] ON [staging1].[eng_name] = [uni_dim].[eng_name];&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Geolocation Dimension"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5775DAEA-961D-4FE1-A278-9DDB6A25DC55}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Geolocation Dimension"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="INSERT INTO geolocation_dim  (coordinates, latitude, longitude) SELECT coordinates, latitude, longitude FROM staging1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update University Dimension"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E9070CB5-7DED-44E7-B32F-3FBD58769056}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update University Dimension"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="INSERT INTO university_dim (iau_id, iau_id1, eng_name, orig_name, foundedyr, yrclosed, private01, merger, noiau, phd_granting, m_granting, b_granting, divisions, total_fields, unique_fields, specialized)&#xA;SELECT iau_id, iau_id1, eng_name, orig_name, foundedyr, yrclosed, private01, merger, noiau, phd_granting, m_granting, b_granting, divisions, total_fields, unique_fields, specialized&#xA;FROM staging1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Year Dimension"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5ADFC93C-1465-4C78-B087-09A9CC0DC30A}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Year Dimension"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BE75F00F-C3EB-4715-8038-74DC9D58540C}"
+          SQLTask:SqlStatementSource="INSERT INTO year_dim (year) SELECT DISTINCT year FROM staging1 WHERE year IS NOT NULL" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4FA270EB-CEAE-49E0-A69B-82B171E862F3}"
+      DTS:From="Package\Truncate Staging Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Flow Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{3E5BAC9D-012C-46C0-8D65-2BCA5B41CF34}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update Year Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{33E25D0F-3224-4B9C-BCB8-4A80B94098DE}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update Geolocation Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{C5CA4397-D26A-4A06-A5FF-E7F4052507A2}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Update University Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{C2755E87-7466-461D-AAFD-5DB53FB14CFD}"
+      DTS:From="Package\Update University Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{0E6B73D6-2886-4BB1-87A1-9C96553D7C03}"
+      DTS:From="Package\Update Year Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{5459FC1A-96C7-4C07-9B29-CF024E81C3AB}"
+      DTS:From="Package\Update Geolocation Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Update Fact Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{B580F00B-59C9-44A1-A5FE-BADFD1A39ED6}"
+      DTS:From="Package\Truncate Populations Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Data Flow Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{D1469C57-0508-42B3-B969-FB80CEEE2C85}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Update Country Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{188EEA29-E280-4A17-8A6B-BA5557936B82}"
+      DTS:From="Package\Update Country Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Update Fact Table" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="521.666638164058,215.799998499353" />
+        <NodeLayout
+          Size="200,41.6"
+          Id="Package\Truncate Populations Table"
+          TopLeft="111.908333731732,309.399997848471" />
+        <NodeLayout
+          Size="186.4,41.6"
+          Id="Package\Truncate Staging Table"
+          TopLeft="134.666659609312,113.833332579996" />
+        <NodeLayout
+          Size="208.8,54.4"
+          Id="Package\Update Country Dimension"
+          TopLeft="803.124956119187,558.416663284186" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Update Fact Table"
+          TopLeft="1137.49993784974,222.733331784473" />
+        <NodeLayout
+          Size="206.4,41.6"
+          Id="Package\Update Geolocation Dimension"
+          TopLeft="805.833289304543,338.86666431023" />
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\Update University Dimension"
+          TopLeft="809.166622455751,68.4666661905581" />
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\Update Year Dimension"
+          TopLeft="820.833288484979,218.399998481273" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="227.866659609312,155.433332579996">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="368.999978554746,60.3666659193571"
+              Start="0,0"
+              End="368.999978554746,52.8666659193571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1833329596785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.1833329596785"
+                    Point2="0,30.1833329596785"
+                    Point3="4,30.1833329596785" />
+                  <mssgle:LineSegment
+                    End="364.999978554746,30.1833329596785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="364.999978554746,30.1833329596785"
+                    Point2="368.999978554746,30.1833329596785"
+                    Point3="368.999978554746,34.1833329596785" />
+                  <mssgle:LineSegment
+                    End="368.999978554746,52.8666659193571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="672.066638164058,237.899998490313">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="148.766650320921,0"
+              Start="0,0"
+              End="141.266650320921,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="141.266650320921,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="620.599971497391,257.399998499353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="255.366651140485,81.4666658108771"
+              Start="0,0"
+              End="255.366651140485,73.9666658108771">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.8769942702072" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.8769942702072"
+                    Point2="0,40.8769942702072"
+                    Point3="4,40.8769942702072" />
+                  <mssgle:LineSegment
+                    End="251.366651140485,40.8769942702072" />
+                  <mssgle:CubicBezierSegment
+                    Point1="251.366651140485,40.8769942702072"
+                    Point2="255.366651140485,40.8769942702072"
+                    Point3="255.366651140485,44.8769942702072" />
+                  <mssgle:LineSegment
+                    End="255.366651140485,73.9666658108771" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="620.599971497391,215.799998499353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="260.833317625026,-105.733332308795"
+              Start="0,0"
+              End="260.833317625026,-98.2333323087953">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-49.0682382150924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-49.0682382150924"
+                    Point2="0,-53.0682382150924"
+                    Point3="4,-53.0682382150924" />
+                  <mssgle:LineSegment
+                    End="256.833317625026,-53.0682382150924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="256.833317625026,-53.0682382150924"
+                    Point2="260.833317625026,-53.0682382150924"
+                    Point3="260.833317625026,-57.0682382150924" />
+                  <mssgle:LineSegment
+                    End="260.833317625026,-98.2333323087953" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="949.699955789084,110.066666190558">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="269.799982060656,112.666665593915"
+              Start="0,0"
+              End="269.799982060656,105.166665593915">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5711438447031" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5711438447031"
+                    Point2="0,45.5711438447031"
+                    Point3="4,45.5711438447031" />
+                  <mssgle:LineSegment
+                    End="265.799982060656,45.5711438447031" />
+                  <mssgle:CubicBezierSegment
+                    Point1="265.799982060656,45.5711438447031"
+                    Point2="269.799982060656,45.5711438447031"
+                    Point3="269.799982060656,49.5711438447031" />
+                  <mssgle:LineSegment
+                    End="269.799982060656,105.166665593915" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="1009.63328848498,241.366665132873">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="127.866649364761,0"
+              Start="0,0"
+              End="120.366649364761,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="120.366649364761,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="942.09995597121,338.86666431023">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="277.39998187853,-74.5333325257571"
+              Start="0,0"
+              End="277.39998187853,-67.0333325257571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-26.1573330065756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-26.1573330065756"
+                    Point2="0,-30.1573330065756"
+                    Point3="4,-30.1573330065756" />
+                  <mssgle:LineSegment
+                    End="273.39998187853,-30.1573330065756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="273.39998187853,-30.1573330065756"
+                    Point2="277.39998187853,-30.1573330065756"
+                    Point3="277.39998187853,-34.1573330065756" />
+                  <mssgle:LineSegment
+                    End="277.39998187853,-67.0333325257571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="211.908333731732,309.399997848471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="349.358304432326,-51.999999349118"
+              Start="0,0"
+              End="349.358304432326,-44.499999349118">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-30.0627173436731" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-30.0627173436731"
+                    Point2="0,-34.0627173436731"
+                    Point3="4,-34.0627173436731" />
+                  <mssgle:LineSegment
+                    End="345.358304432326,-34.0627173436731" />
+                  <mssgle:CubicBezierSegment
+                    Point1="345.358304432326,-34.0627173436731"
+                    Point2="349.358304432326,-34.0627173436731"
+                    Point3="349.358304432326,-38.0627173436731" />
+                  <mssgle:LineSegment
+                    End="349.358304432326,-44.499999349118" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="596.866638164058,257.399998499353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="277.191651288462,301.016664784832"
+              Start="0,0"
+              End="277.191651288462,293.516664784832">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,175.23653880344" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,175.23653880344"
+                    Point2="0,179.23653880344"
+                    Point3="4,179.23653880344" />
+                  <mssgle:LineSegment
+                    End="273.191651288462,179.23653880344" />
+                  <mssgle:CubicBezierSegment
+                    Point1="273.191651288462,179.23653880344"
+                    Point2="277.191651288462,179.23653880344"
+                    Point3="277.191651288462,183.23653880344" />
+                  <mssgle:LineSegment
+                    End="277.191651288462,293.516664784832" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="940.991622785853,558.416663284186">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="252.508315063887,-294.083331499712"
+              Start="0,0"
+              End="252.508315063887,-286.583331499712">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-142.665118590445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-142.665118590445"
+                    Point2="0,-146.665118590445"
+                    Point3="4,-146.665118590445" />
+                  <mssgle:LineSegment
+                    End="248.508315063887,-146.665118590445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="248.508315063887,-146.665118590445"
+                    Point2="252.508315063887,-146.665118590445"
+                    Point3="252.508315063887,-150.665118590445" />
+                  <mssgle:LineSegment
+                    End="252.508315063887,-286.583331499712" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="142.4,41.6"
+          Id="Package\Data Flow Task\Staging Table"
+          TopLeft="843.99998742342,170.999997451902" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Data Flow Task\University Dataset"
+          TopLeft="358.999994650483,177.999997347593" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Data Flow Task\Population Dataset"
+          TopLeft="358.333313754864,260.866664852632" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Data Flow Task\Population Table"
+          TopLeft="834.999954377613,263.533331567513" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output1]"
+          TopLeft="525.533313754864,282.999998210073">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="309.466640622749,0"
+              Start="0,0"
+              End="301.966640622749,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="301.966640622749,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="522.999994650483,195.299997399747">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="320.999992772937,0"
+              Start="0,0"
+              End="313.499992772937,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="313.499992772937,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Staging Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\University Dataset">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Population Dataset">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Population Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
